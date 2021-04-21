@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="reserviacss.css" />
+        <script src="https://kit.fontawesome.com/e7dc15cad6.js" crossorigin="anonymous"></script> 
+        <titre></titre>
+    </head>
+
+    <body>
+    <main> 
+<!--En tete-->        
+<header class="header">   
+        <div class="logo">
+            <img class="headlogo" src="image/Reservia@3x.png" alt="Logo de Reservia">
+        </div>
+        <span class="menu">
+        <nav class="navtitre">
+            <span class="hebactsin">
+                <a class="headnav" href="#hebergements">Hébergements</a>
+                <a class="headnav" href="#activites">Activités</a>
+            </span> 
+                <a class="headsin sinscrire" href="sinscrire">S'inscrire</a>
+        </nav>
+    </span>
+</header>
+<!--En tete-->  
+
+<!--Recherche-->
+<section class="search">
+    <div class="titretrou">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+    </div>
+    <div class="enplein">
+        <p>En plein centre ville ou en pleine nature</p>
+    </div>
+        <form class="rechercheform" method="post" action="reservia.php">
+            <span class="rechlogo">
+                <i class="fas fa-map-marker-alt fillocali"></i>
+
+            </span>
+
+                <input type="text" name="lieu" id="lieu" placeholder="Marseille, France"/>
+                <button class="buttonrech"> 
+                     <span class="rechercher" type="button" value="Rechercher">Rechercher</span>
+                    <i class="fas fa-search" class="recherchemobile "></i>
+                </button>                
+        </form>
+
+<!--Filtres-->
+    <div class="searchfiltre">
+        <h2 class="filtres">Filtres</h2>
+        
+        <div class="recherchefil">
+            <div class="rond">
+                <i class="fas fa-money-bill-wave" id="logo_filterwave"></i>            
+            </div>
+            <div class="recherchefiltrenom">&Eacuteconomique</div>
+        </div>
+        
+        <div class="recherchefil">    
+            <div class="rond">
+                <i class="fas fa-child" id="logo_filterchild"></i>
+            </div>
+            <div class="recherchefiltrenom">Familial</div>
+        </div>
+        
+        <div class="recherchefil">      
+            <div class="rond">
+                <i class="fas fa-heart" id="logo_filterheart"></i>
+            </div>
+            <div class="recherchefiltrenom">Romantique</div>
+        </div>
+        
+        <div class="recherchefil">     
+            <div class="rond">
+                <i class="fas fa-dog" id="logo_filterdog"></i>
+            </div>
+            <div class="recherchefiltrenom">Animaux autorisés</div>
+        </div> 
+    </div>           
+    <div class="info">            
+        <i class="fas fa-info"></i> <span class="dispo"> Plus de 500 logements sont disponibles dans cette ville</span>   
+    </div>    
+</section>
+<!--Filtres-->
+<!--Recherche-->
+
+
+
+<!--Blocs photos-->
+<h2>Les plus populaires</h2>
+<h2 id="hebergements">Hébergements à Marseille</h2>
+<h2 id="activites">Activités à Marseille</h2>
+<!--Blocs photos-->
+
+<!--Pied de page-->            
+<footer class="footer">     
+    <section class="sectionfoot">
+        <div class="propos">
+            <h2>A propos</h2>
+            <p>Fonctionnement du site</p>
+            <p>Conditions générale de vente</p>
+            <p>Données et confidentialité</p>
+        </div>
+    </section>
+    <section class="sectionfoot">
+        <div class="heber">
+            <h2>Nos hébergements</h2>
+            <p>Charte qualité</p>
+            <p>Soumettre votre hôtel</p>
+        </div>
+    </section>  
+    <section class="sectionfoot">
+        <div class="assist">
+            <h2>Assistance</h2>   
+            <p>Centre d'aide</p>
+            <a a href="mailto:contact@reservia.com">Nous contacter</a>
+        </div>
+    </section>
+
+            </footer>
+<!--Pied de page-->            
+        </div>
+    </main>
+    </body>
+</html>
