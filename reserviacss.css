@@ -7,7 +7,11 @@
     font-weight: normal;
     font-style: normal;
 }
-
+/*
+*{
+    padding: 0 30px 0 30px;
+}
+*/
 body {
     font-family: 'ralewayregular', Arial, Verdana, sans-serif;
 }
@@ -156,7 +160,7 @@ a {
 
 .recherchefil {
     height: 3em;
-    width: 12em;
+    width: 15em;
     display: flex;
     align-items: center;
     margin-right: 1em;
@@ -213,6 +217,7 @@ a {
     color:#0065FC;
     border-radius: 100%;
 }
+
 .info {
     margin-top: 30px;
     display: flex;
@@ -238,15 +243,16 @@ a {
 
 /*Hebergement*/
 .hebergements {
+    position: relative;
     background-color: #F2F2F2;
     border-radius: 2em;
     width: 60%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 2em;
-    row-gap: 2em;
-    padding: 2rem;
-
+    column-gap: 3em;
+    row-gap: 3em;
+    justify-content: justify;
 }
 
 .heberheader {
@@ -254,7 +260,9 @@ a {
     padding: 0 0 0 45px;
 }
 #titreheber {
-    display: block;
+    position: absolute;
+    top: 0px;
+    left: 10px;
     font-weight: bold;
 }
 
@@ -263,19 +271,18 @@ a {
     justify-content: center;
     border-radius: 1.5em;
     background-color: #FFFFFF;
-    height: 15rem;
-    width: 13rem;
-    
+    height: 15em;
+    width: 17em;
+    margin: 4em 1em 4em 1em;
 }
 .heberimg {
     height: 8rem;
-    width: 12rem;
+    width: 16rem;
     border-radius: 1.5em 1.5em 0 0;
-    padding: 1px 0 0 0;
+    padding: 0 0 0 0;
 
 }
-.hebernuit {
-}
+
 
 
 /*Hebergement*/
