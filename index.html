@@ -43,8 +43,8 @@
 
                 <input type="text" name="lieu" id="lieu" placeholder="Marseille, France"/>
                 <button class="buttonrech"> 
-                     <span class="rechercher" type="button" value="Rechercher">Rechercher</span>
-                    <i class="fas fa-search" class="recherchemobile "></i>
+                     <div class="rechercher" type="button" value="Rechercher">Rechercher</div>
+                    <i class="fas fa-search "></i>
                 </button>                
         </form>
 
@@ -52,33 +52,33 @@
     <div class="searchfiltre">
         <h2 class="filtres">Filtres</h2>
         
-        <div class="recherchefil">
+        <a href="#" class="recherchefil">
             <div class="rond">
                 <i class="fas fa-money-bill-wave" id="logo_filterwave"></i>            
             </div>
             <div class="recherchefiltrenom">&Eacuteconomique</div>
-        </div>
+        </a>
         
-        <div class="recherchefil">    
+        <a href="#" class="recherchefil">    
             <div class="rond">
                 <i class="fas fa-child" id="logo_filterchild"></i>
             </div>
             <div class="recherchefiltrenom">Familial</div>
-        </div>
+        </a>
         
-        <div class="recherchefil">      
+        <a href="#" class="recherchefil">      
             <div class="rond">
                 <i class="fas fa-heart" id="logo_filterheart"></i>
             </div>
             <div class="recherchefiltrenom">Romantique</div>
-        </div>
+        </a>
         
-        <div class="recherchefil">     
+        <a href="#" class="recherchefil">     
             <div class="rond">
                 <i class="fas fa-dog" id="logo_filterdog"></i>
             </div>
             <div class="recherchefiltrenom">Animaux autorisés</div>
-        </div> 
+        </a> 
     </div>           
     <div class="info">            
         <i class="fas fa-info" class="ilogo"></i> <span class="dispo"> Plus de 500 logements sont disponibles dans cette ville</span>   
@@ -90,134 +90,217 @@
 
 
 <!--Blocs photos-->
+<div class="blocrecherchevacances">
 
-<article class="choixlieu">
-    <h2>Les plus populaires</h2>
+        <!--Les plus populaires-->
+    <div id="populaire">
 
-    <div class="hebergements">
-        <header class="heberheader">
-            <h2 id="titreheber">Hébergements à Marseille</h2>
+        <header class="populaireheader">
+            <h2 id="titrepopulaire">Les plus populaires</h2>
+            <!-- <i class="fas fa-chart-line "></i> -->
         </header>
-        <article class="heber">
-            <a href="#">
-                <figure class="heberfigure">
-                    <img class="heberimg" src="image/hebergement/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre avec lit superposé, vu sur la ville">
-                    <figcaption class="heberlegende">
-                        <h4 class="heberlegendetitre">Auberge la Cannebière</h4>
-                    </figcaption>
-                </figure>
-                <p class="herbernuit">Nuit à partir de <strong class="herberprix">25€</strong></p>
-                <div class="herbernote">
 
-                </div>
-            </a>
-        </article>
-        <article class="heber">
-            <a href="#">
-                <figure class="heberfigure">
-                    <img class="heberimg" src="image/hebergement/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre avec deux lits simple">
-                    <figcaption class="heberlegende">
-                        <h4 class="heberlegendetitre">Hôtel du port</h4>
-                    </figcaption>
-                </figure>
-                <p class="herbernuit">Nuit à partir de <strong class="herberprix">52€</strong></p>
-                <div class="herbernote">
+        <div class="blocpopulaire">
+                <a href="#"  class="popu">
+                        <figure class="popufigure">
+                            <img class="popuimg" src="image/hebergement/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre avec lit double, couleur verte">
+                            <figcaption class="populegende">
+                                <h4 class="populegendetitre">Hôtel Le soleil du matin</h4>
+                                <p class="popunuit">Nuit à partir de <strong class="popuprix">128€</strong></p>
+                                <div class="popunote">
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                </div>
+                            </figcaption>
+                        </figure>                
+                </a>
 
-                </div>
+                <a href="#"  class="popu">
+                    <figure class="popufigure">
+                        <img class="popuimg" src="image/hebergement/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre avec lit double, mezzanine">
+                        <figcaption class="populegende">
+                            <h4 class="populegendetitre">Au coeur de l'eau Chambres d'hôtes</h4>
+                            <p class="popunuit">Nuit à partir de <strong class="popuprix">71€</strong></p>
+                            <div class="popunote">
+                                <i class="fas fa-star logonote" data-active="true"></i>
+                                <i class="fas fa-star logonote" data-active="true"></i>
+                                <i class="fas fa-star logonote" data-active="true"></i>
+                                <i class="fas fa-star logonote" data-active="true"></i>
+                                <i class="fas fa-star logonote" data-active="false"></i>
+                            </div>
+                        </figcaption>
+                    </figure>                
             </a>
-        </article>
-        <article class="heber">
-            <a href="#">
-                <figure class="heberfigure">
-                    <img class="heberimg" src="image/hebergement/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre avec lit simple">
-                    <figcaption class="heberlegende">
-                        <h4 class="heberlegendetitre">Hôtel Les mouettes</h4>
-                    </figcaption>
-                </figure>
-                <p class="herbernuit">Nuit à partir de <strong class="herberprix">76€</strong></p>
-                <div class="herbernote">
 
-                </div>
-            </a>
-        </article>
-        <article class="heber">
-            <a href="#">
-                <figure class="heberfigure">
-                    <img class="heberimg" src="image/hebergement/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre avec lit double, décoration mer">
-                    <figcaption class="heberlegende">
-                        <h4 class="heberlegendetitre">Hôtel de la mer</h4>
+            <a href="#"  class="popu">
+                <figure class="popufigure">
+                    <img class="popuimg" src="image/hebergement/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre avec lit double, mur blanc">
+                    <figcaption class="populegende">
+                        <h4 class="populegendetitre">Hôtel Tout bleu et Blanc</h4>
+                        <p class="popunuit">Nuit à partir de <strong class="popuprix">68€</strong></p>
+                        <div class="popunote">
+                            <i class="fas fa-star logonote" data-active="true"></i>
+                            <i class="fas fa-star logonote" data-active="true"></i>
+                            <i class="fas fa-star logonote" data-active="true"></i>
+                            <i class="fas fa-star logonote" data-active="true"></i>
+                            <i class="fas fa-star logonote" data-active="false"></i>
+                        </div>
                     </figcaption>
-                </figure>
-                <p class="herbernuit">Nuit à partir de <strong class="herberprix">46€</strong></p>
-                <div class="herbernote">
-
-                </div>
+                </figure>                
             </a>
-        </article>
-        <article class="heber">
-            <a href="#">
-                <figure class="heberfigure">
-                    <img class="heberimg" src="image/hebergement/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre avec deux lits superposés, chambre en style bois">
-                    <figcaption class="heberlegende">
-                        <h4 class="heberlegendetitre">Auberge Le Panier</h4>
-                    </figcaption>
-                </figure>
-                <p class="herbernuit">Nuit à partir de <strong class="herberprix">23€</strong></p>
-                <div class="herbernote">
+        </div>
+    </div>
+        <!--Les plus populaires-->
 
-                </div>
-            </a>
-        </article>
-        <article class="heber">
-            <a href="#">
-                <figure class="heberfigure">
-                    <img class="heberimg" src="image/hebergement/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre avec deux lits double, vu sur la ville">
-                    <figcaption class="heberlegende">
-                        <h4 class="heberlegendetitre">Hôtel chez Amina</h4>
-                    </figcaption>
-                </figure>
-                <p class="herbernuit">Nuit à partir de <strong class="herberprix">96€</strong></p>
-                <div class="herbernote">
+        <!--Hébergements à Marseille-->
+        <div id="hebergements">
 
-                </div>
-            </a>
-        </article>
+            <header class="heberheader">
+                <h2 id="titreheber">Hébergements à Marseille</h2>
+            </header>
+
+            <div class="blocheber">
+                <a href="#"  class="heber">
+                        <figure class="heberfigure">
+                            <img class="heberimg" src="image/hebergement/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre avec lit superposé, vu sur la ville">
+                            <figcaption class="heberlegende">
+                                <h4 class="heberlegendetitre">Auberge la Cannebière</h4>
+                                <p class="herbernuit">Nuit à partir de <strong class="herberprix">25€</strong></p>
+                                <div class="herbernote">
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="false"></i>
+                                </div>
+                            </figcaption>
+                        </figure>                
+                </a>
+
+                <a href="#" class="heber">               
+                        <figure class="heberfigure">
+                            <img class="heberimg" src="image/hebergement/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre avec deux lits simple">
+                            <figcaption class="heberlegende">
+                                <h4 class="heberlegendetitre">Hôtel du port</h4>                 
+                                <p class="herbernuit">Nuit à partir de <strong class="herberprix">52€</strong></p>
+                                <div class="herbernote">
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                </a>
+
+                <a href="#" class="heber">
+                        <figure class="heberfigure">
+                            <img class="heberimg" src="image/hebergement/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre avec lit simple">
+                            <figcaption class="heberlegende">
+                                <h4 class="heberlegendetitre">Hôtel Les mouettes</h4>
+                                <p class="herbernuit">Nuit à partir de <strong class="herberprix">76€</strong></p>
+                                <div class="herbernote">
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="false"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                </a>
+
+                <a href="#" class="heber">
+                        <figure class="heberfigure">
+                            <img class="heberimg" src="image/hebergement/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre avec lit double, décoration mer">
+                            <figcaption class="heberlegende">
+                                <h4 class="heberlegendetitre">Hôtel de la mer</h4>
+                                <p class="herbernuit">Nuit à partir de <strong class="herberprix">46€</strong></p>
+                                <div class="herbernote">
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="false"></i>
+                                    <i class="fas fa-star logonote" data-active="false"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                </a>
+
+                <a href="#" class="heber">
+                        <figure class="heberfigure">
+                            <img class="heberimg" src="image/hebergement/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre avec deux lits superposés, chambre en style bois">
+                            <figcaption class="heberlegende">
+                                <h4 class="heberlegendetitre">Auberge Le Panier</h4>
+                                <p class="herbernuit">Nuit à partir de <strong class="herberprix">23€</strong></p>
+                                <div class="herbernote">
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="false"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                <a href="#" class="heber">
+                        <figure class="heberfigure">
+                            <img class="heberimg" src="image/hebergement/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre avec deux lits double, vu sur la ville">
+                            <figcaption class="heberlegende">
+                                <h4 class="heberlegendetitre">Hôtel chez Amina</h4>
+                                <p class="herbernuit">Nuit à partir de <strong class="herberprix">96€</strong></p>
+                                <div class="herbernote">
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                </a>
+            </div>
+            <a class="afficherplus" href="#">Afficher plus</a>
+    </div>
+    <!--Hébergements à Marseille-->
+
+    <!--Activités à Marseille-->
+    <h2 id="activites">Activités à Marseille</h2>
+    <!--Activités à Marseille-->
+
 </div>
-
-
-<h2 id="activites">Activités à Marseille</h2>
-</article>
-
-<!--Blocs photos-->
+    <!--Blocs photos-->
 
 <!--Pied de page-->            
 <footer class="footer">     
-    <section class="sectionfoot">
-        <div class="propos">
-            <h2>A propos</h2>
-            <p>Fonctionnement du site</p>
-            <p>Conditions générale de vente</p>
-            <p>Données et confidentialité</p>
+    <div class="sectionfoot">
+        <div class="soussectionfoot">
+            <h2 class="titrefoot">A propos</h2>
+            <a href="#" class="lienfooter">Fonctionnement du site</a> 
+            <a href="#" class="lienfooter">Conditions générale de vente</a>
+            <a href="#" class="lienfooter">Données et confidentialité</a>
         </div>
-    </section>
-    <section class="sectionfoot">
-        <div class="heberfoot">
-            <h2>Nos hébergements</h2>
-            <p>Charte qualité</p>
-            <p>Soumettre votre hôtel</p>
+        <div class="soussectionfoot">
+            <h2 class="titrefoot">Nos hébergements</h2>
+            <a href="#" class="lienfooter">Charte qualité</a> 
+            <a href="#" class="lienfooter">Soumettre votre hôtel</a>
         </div>
-    </section>  
-    <section class="sectionfoot">
-        <div class="assist">
-            <h2>Assistance</h2>   
-            <p>Centre d'aide</p>
-            <a a href="mailto:contact@reservia.com">Nous contacter</a>
+      
+        <div class="soussectionfoot">
+            <h2 class="titrefoot">Assistance</h2>   
+            <a href="#" class="lienfooter">Centre d'aide</a> 
+            <a a href="mailto:contact@reservia.com" title="Envoyer un mail à contact@reservia.com" class="mail">Nous contacter</a>
         </div>
-    </section>
+    </div>
 
-            </footer>
+</footer>
 <!--Pied de page-->            
-        </div>
     </main>
     </body>
 </html>
+

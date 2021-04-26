@@ -61,7 +61,7 @@ a {
 
 }
 
-
+/*
 @media screen and (max-width: 600px) {
     
     .header {
@@ -92,7 +92,7 @@ a {
     }
 
 }
-
+*/
 /*En tete*/
 
 
@@ -122,12 +122,16 @@ a {
     border-radius:  10px 0 0 10px ;
     font-size: 1rem;
 }
+.recherchefiltrenom {
+    padding-left: 10%;
+}
 
 #lieu {
+    padding-left: 20px;
     height: 2em;
     border: 2px solid #F2F2F2;
-    text-align: center;
 }
+
 .buttonrech {
     background-color: #0065FC;
     color: #FFFFFF;
@@ -137,9 +141,11 @@ a {
     border-radius: 0 10px 10px 0;
     font-size: 1rem;
 }
-.recherchemobile{
+
+i.fas.fa-search {
     display: none;
 }
+
 /*Recherche*/
 
 
@@ -220,17 +226,17 @@ a {
 
 .info {
     margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
 }
 .fa-info {
+    padding: 4px 9px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 1em;
     color:#0065FC;
-    height: 2em;
-    width: 2em;
     border: 2px solid #F2F2F2;
     background-color: #FFFFFF;  
     border-radius: 100%;
@@ -241,68 +247,168 @@ a {
 }
 /*Filtres*/
 
+/*Bloc central de recherche de vacances*/
+
+.blocrecherchevacances {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+/*Populaire*/
+#populaire {
+    order:2;
+    background-color: #F2F2F2;
+    border-radius: 2em;
+    width: 25%;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.populaireheader {
+    position: absolute;
+    left: 86em;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+
+.blocpopulaire {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 1.5em;
+    background-color: #FFFFFF;
+    height: 11em;
+    width: 25em;
+    margin: 4em 1em 2em 1em;
+    
+}
+.popu:hover {
+    zoom: 105%;
+}
+
+.popuimg {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 1.5em 0 0 1.5em;
+}
+/*Populaire*/
+
+
 /*Hebergement*/
-.hebergements {
-    position: relative;
+#hebergements {
+    order: 1;
     background-color: #F2F2F2;
     border-radius: 2em;
     width: 60%;
+    height: 50em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 3em;
-    row-gap: 3em;
     justify-content: justify;
 }
 
-.heberheader {
-    display: block;
-    padding: 0 0 0 45px;
-}
+
 #titreheber {
     position: absolute;
-    top: 0px;
-    left: 10px;
+    left: 6em;
     font-weight: bold;
+}
+.blocheber {
+    display: flex;
+    align-content:center;
+    justify-content:space-around;
+    flex-wrap: wrap;
 }
 
 .heber {
     display: flex;
+    align-items: center;
     justify-content: center;
     border-radius: 1.5em;
     background-color: #FFFFFF;
-    height: 15em;
+    height: 16em;
     width: 17em;
     margin: 4em 1em 4em 1em;
+    
 }
+.heber:hover {
+    zoom: 105%;
+}
+
 .heberimg {
+    align-items: flex-start;
     height: 8rem;
     width: 16rem;
     border-radius: 1.5em 1.5em 0 0;
-    padding: 0 0 0 0;
-
 }
 
+.logonote[data-active=true] {
+    color: #0065FC;
+}
 
-
+.logonote[data-active=false] {
+    color: #d9d9d9;
+}
+.afficherplus {
+    position:absolute;
+    left: 8em;
+    bottom:-13em;
+    font-weight: bold;
+}
 /*Hebergement*/
 
-
+#activites {
+    order:3;
+    background-color: #F2F2F2;
+    border-radius: 2em;
+    width: 93%;
+    height: 48em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: justify;
+}
 
 /*Pied de page*/
  
 .footer {
-    display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #F2F2F2;
-    
+    background-color: #F2F2F2;   
 }
 
 .sectionfoot {
-    margin: 0% 5%;
- 
+    display: flex;
+    padding: 2% 5%;
+}
+.soussectionfoot{
+    width:30%;
+    padding: 1rem ;
+}
+
+.lienfooter{
+    display: block;
+    padding: 1rem 0;
+}
+.lienfooter:hover {
+    text-decoration: underline;
+}
+.mail:hover {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
@@ -310,7 +416,8 @@ a {
     .footer {
     background-color: #F2F2F2;
     flex-direction: column;
-
 }  
+
+
 }
 /*Pied de page*/
