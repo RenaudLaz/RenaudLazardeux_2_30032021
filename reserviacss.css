@@ -7,11 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
-/*
-*{
-    padding: 0 30px 0 30px;
-}
-*/
+
 body {
     font-family: 'ralewayregular', Arial, Verdana, sans-serif;
 }
@@ -24,6 +20,8 @@ body {
     justify-content: space-between; 
     align-items: baseline;
     margin-bottom: 35px;
+    margin-right: 5%;
+    padding-left: 5%;    
 
 }
 
@@ -37,10 +35,12 @@ body {
     font-weight: bold;
     font-size: 1.5em;
 }
+
 a {
     color: #000000;
     text-decoration: none;
 }
+
 .sinscrire {
     margin: 0px 30px 0px 30px;
     font-weight: bold;
@@ -48,17 +48,16 @@ a {
     color: #0065FC;
     text-decoration: none;
 }
-.headsin:hover {
-    zoom: 120%;
-}
 
+.headsin:hover {
+    color: #DEEBFF;
+}
 
 .headnav:hover {
     color: #0065FC;
     text-decoration: #0065FC;
     padding: 62px 0px 0px 0px;
     border-top: 4px solid #0065FC;
-
 }
 
 /*
@@ -96,9 +95,9 @@ a {
 /*En tete*/
 
 
-
 /*Recherche*/
 .search {
+    padding-left: 5%;
     justify-content: center;
 }
 
@@ -140,14 +139,13 @@ a {
     border: none;
     border-radius: 0 10px 10px 0;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 i.fas.fa-search {
     display: none;
 }
-
 /*Recherche*/
-
 
 
 /*Filtres*/
@@ -155,6 +153,7 @@ i.fas.fa-search {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     text-align: center;
 }
 
@@ -173,6 +172,11 @@ i.fas.fa-search {
     margin-left: 1em;
     border: 2px solid #F2F2F2;
     border-radius: 2rem;
+}
+.recherchefil:hover {
+    transform: scale(1.015);
+    background-color:#DEEBFF ;
+
 }
 .recherchefiltrenom{
     display: flex;
@@ -261,54 +265,48 @@ i.fas.fa-search {
 #populaire {
     order:2;
     background-color: #F2F2F2;
-    border-radius: 2em;
-    width: 25%;
-    height: 50em;
+    border-radius: 1.5em;
+    width: 30%;
+    height: 40em;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
 }
-
 
 .populaireheader {
-    position: absolute;
-    left: 86em;
+    margin: 0 30px;
+    display:flex;
+    align-items: center;
     font-weight: bold;
-    justify-content: space-between;
-}
-
-
-.blocpopulaire {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .popu {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
     border-radius: 1.5em;
+    justify-content: center;
     background-color: #FFFFFF;
-    height: 11em;
+    box-shadow: 0 0 15px grey;
+    height: 10em;
     width: 90%;
-    margin: 4em 5% 2em 5%;
-    
+    margin: 1% 5%;
 }
+
+.popu:hover {
+    transform: scale(1.015);
+}
+
+.blocpopulaire {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .popufigure {
     display: flex;
-    align-content: flex-start;
-    justify-content: space-between;
-}
-.popu:hover {
-    zoom: 105%;
 }
 
 .popuimg {
-    height: 10.5em;
-    width: 50%;
+    height: 9em;
+    width: 250px;
     border-radius: 1.5em 0 0 1.5em;
 }
 
@@ -319,49 +317,58 @@ i.fas.fa-search {
 #hebergements {
     order: 1;
     background-color: #F2F2F2;
-    border-radius: 2em;
-    width: 60%;
-    height: 50em;
+    border-radius: 1.5em;
+    width: 55%;
+    height: 40em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: justify;
 }
 
 
-#titreheber {
-    position: absolute;
-    left: 6em;
+.heberheader{
+    margin: 0 0 0 30px;
+    display:flex;
     font-weight: bold;
 }
 .blocheber {
     display: flex;
-    align-content:center;
     justify-content:space-around;
     flex-wrap: wrap;
 }
 
 .heber {
     display: flex;
+    flex-direction: column;
     align-items: center;
     border-radius: 1.5em;
     justify-content: center;
     background-color: #FFFFFF;
-    height: 16em;
+    box-shadow: 0 0 15px grey;
+    height: 13em;
     width: 17em;
-    margin: 4em 1em 4em 1em;
+    margin: 0em 1em 1em 1em;
     
 }
 .heber:hover {
-    zoom: 105%;
+    transform: scale(1.015);
 }
 
 .heberimg {
-    align-items: flex-start;
-    height: 8rem;
-    width: 16rem;
+    margin:  5% 0 0 0;
+    height: 6rem;
+    width: 16.5rem;
     border-radius: 1.5em 1.5em 0 0;
+
 }
+
+.heberlegende {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
 
 .logonote[data-active=true] {
     color: #0065FC;
@@ -371,10 +378,10 @@ i.fas.fa-search {
     color: #d9d9d9;
 }
 .afficherplus {
-    position:absolute;
-    left: 8em;
-    bottom:-13em;
+    position:flex;
     font-weight: bold;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 /*Hebergement*/
 
