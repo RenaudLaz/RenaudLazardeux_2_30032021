@@ -91,28 +91,45 @@
 
 <!--Blocs photos-->
 <div class="blocrecherchevacances">
-
+  
         <!--Les plus populaires-->
-    <div id="populaire">
+        <div id="populaire">
 
-        <header class="populaireheader">
-            <h2 id="titrepopulaire">Les plus populaires</h2> 
-            <i class="fas fa-chart-line "></i>
-        </header>
+            <header class="populaireheader">
+                <h2 id="titrepopulaire">Les plus populaires</h2> 
+                <i class="fas fa-chart-line "></i>
+            </header>
 
-        <div class="blocpopulaire">
-                <a href="#"  class="popu">
+            <div class="blocpopulaire">
+                    <a href="#"  class="popu">
+                            <figure class="popufigure">
+                                <img class="popuimg" src="image/hebergement/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre avec lit double, couleur verte">
+                                <figcaption class="populegende">
+                                    <h4 class="populegendetitre">Hôtel Le soleil du matin</h4>
+                                    <p class="popunuit">Nuit à partir de <strong class="popuprix">128€</strong></p>
+                                    <div class="popunote">
+                                        <i class="fas fa-star logonote" data-active="true"></i>
+                                        <i class="fas fa-star logonote" data-active="true"></i>
+                                        <i class="fas fa-star logonote" data-active="true"></i>
+                                        <i class="fas fa-star logonote" data-active="true"></i>
+                                        <i class="fas fa-star logonote" data-active="true"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>                
+                    </a>
+
+                    <a href="#"  class="popu">
                         <figure class="popufigure">
-                            <img class="popuimg" src="image/hebergement/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre avec lit double, couleur verte">
+                            <img class="popuimg" src="image/hebergement/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre avec lit double, mezzanine">
                             <figcaption class="populegende">
-                                <h4 class="populegendetitre">Hôtel Le soleil du matin</h4>
-                                <p class="popunuit">Nuit à partir de <strong class="popuprix">128€</strong></p>
+                                <h4 class="populegendetitre">Au coeur de l'eau Chambres d'hôtes</h4>
+                                <p class="popunuit">Nuit à partir de <strong class="popuprix">71€</strong></p>
                                 <div class="popunote">
                                     <i class="fas fa-star logonote" data-active="true"></i>
                                     <i class="fas fa-star logonote" data-active="true"></i>
                                     <i class="fas fa-star logonote" data-active="true"></i>
                                     <i class="fas fa-star logonote" data-active="true"></i>
-                                    <i class="fas fa-star logonote" data-active="true"></i>
+                                    <i class="fas fa-star logonote" data-active="false"></i>
                                 </div>
                             </figcaption>
                         </figure>                
@@ -120,10 +137,10 @@
 
                 <a href="#"  class="popu">
                     <figure class="popufigure">
-                        <img class="popuimg" src="image/hebergement/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre avec lit double, mezzanine">
+                        <img class="popuimg" src="image/hebergement/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre avec lit double, mur blanc">
                         <figcaption class="populegende">
-                            <h4 class="populegendetitre">Au coeur de l'eau Chambres d'hôtes</h4>
-                            <p class="popunuit">Nuit à partir de <strong class="popuprix">71€</strong></p>
+                            <h4 class="populegendetitre">Hôtel Tout bleu et Blanc</h4>
+                            <p class="popunuit">Nuit à partir de <strong class="popuprix">68€</strong></p>
                             <div class="popunote">
                                 <i class="fas fa-star logonote" data-active="true"></i>
                                 <i class="fas fa-star logonote" data-active="true"></i>
@@ -133,26 +150,9 @@
                             </div>
                         </figcaption>
                     </figure>                
-            </a>
-
-            <a href="#"  class="popu">
-                <figure class="popufigure">
-                    <img class="popuimg" src="image/hebergement/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre avec lit double, mur blanc">
-                    <figcaption class="populegende">
-                        <h4 class="populegendetitre">Hôtel Tout bleu et Blanc</h4>
-                        <p class="popunuit">Nuit à partir de <strong class="popuprix">68€</strong></p>
-                        <div class="popunote">
-                            <i class="fas fa-star logonote" data-active="true"></i>
-                            <i class="fas fa-star logonote" data-active="true"></i>
-                            <i class="fas fa-star logonote" data-active="true"></i>
-                            <i class="fas fa-star logonote" data-active="true"></i>
-                            <i class="fas fa-star logonote" data-active="false"></i>
-                        </div>
-                    </figcaption>
-                </figure>                
-            </a>
+                </a>
+            </div>
         </div>
-    </div>
         <!--Les plus populaires-->
 
         <!--Hébergements à Marseille-->
@@ -284,11 +284,92 @@
                 </a>
             </div>
             <a class="afficherplus" href="#">Afficher plus</a>
-    </div>
-    <!--Hébergements à Marseille-->
-
+        </div>
+        <!--Hébergements à Marseille-->
+   
     <!--Activités à Marseille-->
-    <h2 id="activites">Activités à Marseille</h2>
+    <div id="activites">
+        <h2 class="titre_activites">Activités à Marseille</h2>
+        <div class="activite">
+            <div class="blocactivite1">
+                <a href="https://www.marseille-tourisme.com/decouvrez-marseille/culture-et-patrimoine/sites-et-monuments/le-vieux-port/">
+                    <div class="blocphoto">
+                        <img class="photo photo2"
+                            src="image/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="Vieux port" />
+                    </div>
+                    <div class="titre_port">
+                        <h3>Vieux Port</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="pomeguesfrioul">
+                <div class="blocactivite2">
+                    <a href="http://www.calanques-parcnational.fr/en/node/1931">
+                        <div class="blocphoto">
+                            <img class="photo"
+                                src="image/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                alt="Fort de pomegues" />
+                        </div>
+                        <div class="titre_pomegues">
+                            <h3>Fort de Pomègues</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="blocactivite3">
+                    <a href="https://lebateau-frioul-if.fr/visiter-le-frioul">
+                        <div class="blocphoto">
+                            <img class="photo"
+                                src="image/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                alt="iles du frioul" />
+                        </div>
+                        <div class="titre_frioul">
+                            <h3>Îles du Frioul</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="blocactivite4">
+                <a href="http://www.calanques-parcnational.fr/fr">
+                    <div class="blocphoto">
+                        <img class="photo photo2"
+                            src="image/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Parc national des calanques" />
+                    </div>
+                    <div class="titre_calanques">
+                        <h3>Parc national des Calanques</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="gardelongchamp">
+                <div class="blocactivite5">
+                    <a href="http://notredamedelagarde.fr/">
+                        <div class="blocphoto">
+                            <img class="photo"
+                                src="image/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                alt="Notre dame de la garde" />
+                        </div>
+                        <div class="titre_garde">
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="blocactivite6">
+                    <a href="https://www.marseille.fr/environnement/parcs-et-jardins/parc-longchamp">
+                        <div class="blocphoto">
+                            <img class="photo"
+                                src="image/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                alt="Parc Longchamp" />
+                        </div>
+                        <div class="titre_longchamp">
+                            <h3>Parc Longchamp</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!--Activités à Marseille-->
 
 </div>
