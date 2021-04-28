@@ -60,34 +60,31 @@ a {
     border-top: 4px solid #0065FC;
 }
 
-/*
-@media screen and (max-width: 600px) {
+.hebactsin2 {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
     
     .header {
         margin: 0;
-        flex-direction: column;     
+        display: flex;
+        flex-direction: row;
+        align-content: center; 
         }
     .logo {
         margin-left: 10px;
     }
     .headnav {
-      text-align: justify;
-        }
-    .headsin {
-        align-self: flex-end;
-        padding: 0;
-        margin-right: 10px;
-        position: relative;
-        bottom: 30px;
+      display: none;
     }
-    .headnav:hover {
-        color: #0065FC;
-        text-decoration: #0065FC;
+    .hebactsin2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .headnav2:hover {
         border-bottom: 4px solid #0065FC;
-        border-top: none;
-    }
-    .headsin:hover {
-    zoom:normal;
     }
 
 }
@@ -249,6 +246,9 @@ i.fas.fa-search {
 .dispo {
     color: #000000;
 }
+@media screen and (max-width: 768px) {
+      
+}
 /*Filtres*/
 
 /*Bloc central de recherche de vacances*/
@@ -311,6 +311,14 @@ i.fas.fa-search {
     border-radius: 1.5em 0 0 1.5em;
 }
 
+@media screen and (max-width: 768px) {
+    #populaire {
+          order: 1;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+      }
+}
 /*Populaire*/
 
 
@@ -319,7 +327,7 @@ i.fas.fa-search {
     order: 1;
     background-color: #F2F2F2;
     border-radius: 1.5em;
-    width: 55%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -346,7 +354,7 @@ i.fas.fa-search {
     background-color: #FFFFFF;
     box-shadow: 0 0 15px grey;
     height: 13em;
-    width: 17em;
+    width: 27%;
     margin: 0em 1em 1em 1em;
     
 }
@@ -355,9 +363,9 @@ i.fas.fa-search {
 }
 
 .heberimg {
-    margin:  5% 0 0 0;
-    height: 6rem;
-    width: 16.5rem;
+    display: flex;
+    height: 50%;
+    width: 110%;
     border-radius: 1.5em 1.5em 0 0;
 
 }
@@ -396,6 +404,8 @@ i.fas.fa-search {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 30px 0;
+    
 }
 
 .titre_activites {
@@ -411,6 +421,9 @@ i.fas.fa-search {
     justify-content: space-between;
 }
 
+.blocactivite:hover {
+    transform: scale(1.015);
+}
 .pomeguesfrioul, .gardelongchamp {
     display: flex;
     flex-direction: column;
@@ -421,12 +434,7 @@ i.fas.fa-search {
 }
 */
 
-.blocactivite1, 
-.blocactivite2, 
-.blocactivite3, 
-.blocactivite4, 
-.blocactivite5, 
-.blocactivite6  {
+.blocactivite {
     box-shadow: 0 0 20px grey;
     padding: 0 0 20px 0;
     border-radius: 1.5em;
@@ -435,19 +443,29 @@ i.fas.fa-search {
 
 .blocphoto {
   display: flex;
-  width: 25em;
-  height: 30em;
+  width: 20em;
+  height: 10em;
 }
 
 .photo {
     border-radius: 1.5em 1.5em 0 0;
+    height: 117%;
     width: 100%;
 }
 .photo2 {
-    height: 200%;
+    height: 280%;
+}
+.titreact {
+position: relative;
+left: 20px;
+top: 283px;
 }
 
-
+.titreact2 {
+    position: relative;
+    left: 20px;
+    top: 23px;
+    }
 
 
 /*Pied de page*/
@@ -478,12 +496,16 @@ i.fas.fa-search {
     font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     
     .footer {
-    background-color: #F2F2F2;
-    flex-direction: column;
-}  
+        background-color: #F2F2F2;
+    } 
+    .sectionfoot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    } 
 
 
 }
