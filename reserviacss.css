@@ -72,7 +72,15 @@ a {
         align-content: center; 
         }
     .logo {
-        margin-left: 10px;
+        margin-left: 0px;
+    }
+    .sinscrire {
+        position: relative;
+        margin-right: 5px;
+        font-weight: bold;
+        font-size: 1.5em;
+        color: #0065FC;
+        text-decoration: none;
     }
     .headnav {
       display: none;
@@ -80,9 +88,14 @@ a {
     .hebactsin2 {
         display: flex;
         flex-direction: row;
+        margin-top: 40px;
+        margin-bottom: 40px;
         justify-content: space-evenly;
+        font-weight: bold;
+        font-size: 1.5em;
     }
     .headnav2:hover {
+        color: #0065FC;
         border-bottom: 4px solid #0065FC;
     }
 }
@@ -91,10 +104,14 @@ a {
 
 /*Recherche*/
 .search {
-    padding-left: 5%;
+  
     justify-content: center;
 }
 
+.blocsearch {
+    position: relative;
+    padding-left: 50px;
+}
 .rechercheform {
     display: inline-flex;
     align-items: center;
@@ -142,6 +159,51 @@ a {
 i.fas.fa-search {
     display: none;
 }
+
+@media screen and (max-width: 768px) {
+    .rechercher {
+        display: none;
+    }
+    .rechlogo {
+        height: 3em;
+        width: 3em;
+    }    
+    .rechlogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2F2F2;
+        color: #000000;
+        height: 3em;
+        border: none;
+        border-radius:  10px 0 0 10px ;
+        font-size: 1rem;
+    }
+    #lieu {
+        padding-left: 20px;
+        height: 3.2em;
+        width: 20em;
+        border: 2px solid #F2F2F2;
+        font-weight: bold;
+    }
+    .buttonrech {
+
+        background-color: #0065FC;
+        color: #FFFFFF;
+        height: 2em;
+        font-weight: bold;
+        border: none;
+        width: 3em;
+        height: 3em;
+        border-radius: 1em;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    i.fas.fa-search {
+        display:flex;
+        justify-content: center;
+    }
+}
 /*Recherche*/
 
 /*Filtres*/
@@ -156,7 +218,7 @@ i.fas.fa-search {
 .filtres{
     font-weight: bold;
     align-items: center;
-    margin: 0 1em 0 1em;
+    margin: 0 1em 0 0;
 }
 
 .recherchefil {
@@ -320,11 +382,34 @@ i.fas.fa-search {
 
 @media screen and (max-width: 768px) {
     #populaire {
-          order: 1;
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-      }
+        order: 1;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0em;
+        margin-bottom: 30px;
+    }
+    .popu {
+      display:flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .popufigure {
+        position:relative;
+        margin-top: 10px;
+        margin-left: 4px;
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        height: 100%;
+        }
+        .popuimg {
+        height: 98%;
+        width: 50%;
+        border-radius: 1.5em 0 0 1.5em;
+        }
 }
 /*Populaire*/
 
@@ -397,6 +482,38 @@ i.fas.fa-search {
     margin-top: 30px;
     margin-left: 30px;
 }
+@media screen and (max-width: 768px) {
+      #hebergements {
+          order: 2;
+          background-color: #FFFFFF;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-bottom: 30px;
+
+        }
+        .heber {
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .heberfigure {
+            position:relative;
+            margin-top: 4px;
+            margin-left: 4px;
+            display: flex;
+            flex-direction: column;
+            width: 98%;
+            height: 100%;
+        }
+        .afficherplus {
+            position:relative;
+            font-weight: bold;
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+}
 /*Hebergement*/
 
 /*Activites*/
@@ -404,7 +521,7 @@ i.fas.fa-search {
     order:3;
     background-color: #FFFFFF;
     border-radius: 2em;
-    width: 93%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -443,7 +560,7 @@ i.fas.fa-search {
 
 .blocphoto {
   display: flex;
-  width: 20em;
+  width: 25em;
   height: 10em;
 }
 
@@ -468,6 +585,38 @@ i.fas.fa-search {
     left: 20px;
     top: 23px;
 }
+@media screen and (max-width: 768px) {
+    #activites {
+        order: 3;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       }
+    .activite {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .blocphoto {
+        display: flex;
+        width: 100%;
+      }
+    .photo {
+        border-radius: 1.5em 1.5em 0 0;
+        height: 110%;
+    }
+    .titreact {
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    
+   
+}
+
+
 /*Activites*/
 /*Bloc central de recherche de vacances*/
 
@@ -502,13 +651,17 @@ i.fas.fa-search {
     
     .footer {
         background-color: #F2F2F2;
-    } 
-    .sectionfoot {
         display: flex;
         flex-direction: column;
-        align-items: center;    
     } 
+    .sectionfoot {
+        position: relative;
+        flex-direction: column;
 
-
+    } 
+    .soussectionfoot{
+        text-align: start;
+        width:100%;
+    }
 }
 /*Pied de page*/
