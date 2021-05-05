@@ -69,12 +69,16 @@ a {
     .header_link2 {
         display: flex;
         flex-direction: row;
-        align-content: center;
         width:100%; 
         font-size: 1.2em;
     }
     .header_nav_link2 {
-        width: 50%;    }
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        width: 50%; 
+        margin-bottom: 30px;   
+    }
     .header_nav_link2:hover {
         color: #0065FC;
         text-decoration: #0065FC;
@@ -84,57 +88,48 @@ a {
 */
 /*En tete*/
 
+
 /*Recherche*/
-.search {
-    justify-content: center;
+.search{ 
+    width: 100%;
 }
-
-.blocsearch {
-    position: relative;
-    padding-left: 50px;
+.search_header {
+    margin-left: 30px;
 }
-.rechercheform {
-    display: inline-flex;
-    align-items: center;
-}
-
-.rechlogo {
-
-    height: 2em;
-    width: 2em;
-}
-
-.rechlogo {
+.search_form {
+    margin-left: 30px;
+    padding: 20px 0;
     display: flex;
+    align-items: center;
+    height: 3em;
+   
+}
+i.fa-map-marker-alt{
+    display: flex;
+    border-radius: 10px 0 0 10px;
+    background-color: #F2F2F2;
+    width: 2em;
+    height: 2em;
     justify-content: center;
     align-items: center;
-    background-color: #F2F2F2;
-    color: #000000;
-    height: 2em;
-    border: none;
-    border-radius:  10px 0 0 10px ;
-    font-size: 1rem;
+    font-size: 1.5em;
 }
-
-.recherchefiltrenom {
-    padding-left: 10%;
-}
-
-#lieu {
-    padding-left: 20px;
-    height: 2em;
-    border: 2px solid #F2F2F2;
-}
-
-.buttonrech {
+.search_button{
     background-color: #0065FC;
     color: #FFFFFF;
-    height: 2em;
+    height: 3.6em;
+    width: 7em;
     font-weight: bold;
     border: none;
     border-radius: 0 10px 10px 0;
-    font-size: 1rem;
     cursor: pointer;
+}
+
+#location {
+    font-weight: bold;
+    padding-left: 20px;
+    height: 3em;
+    border: 3px solid #F2F2F2;
 }
 
 i.fas.fa-search {
@@ -142,90 +137,65 @@ i.fas.fa-search {
 }
 
 @media screen and (max-width: 768px) {
-    .rechercher {
-        display: none;
-    }
-    .rechlogo {
-        height: 3em;
-        width: 3em;
-    }    
-    .rechlogo {
+   
+    .search_form {
         display: flex;
         justify-content: center;
-        align-items: center;
-        background-color: #F2F2F2;
-        color: #000000;
-        height: 3em;
-        border: none;
-        border-radius:  10px 0 0 10px ;
-        font-size: 1rem;
+       
     }
-    #lieu {
-        padding-left: 20px;
-        height: 3.2em;
-        width: 20em;
-        border: 2px solid #F2F2F2;
-        font-weight: bold;
+    .search_button {
+        border-radius: 10px;
+        width: 4em;
     }
-    .buttonrech {
-
-        background-color: #0065FC;
-        color: #FFFFFF;
-        height: 2em;
-        font-weight: bold;
-        border: none;
-        width: 3em;
-        height: 3em;
-        border-radius: 1em;
-        font-size: 1rem;
-        cursor: pointer;
+    .research {
+        display: none;
+    }
+    #location {
+        width: 55%;
+        border-right: none;
     }
     i.fas.fa-search {
-        display:flex;
+        display: flex;
         justify-content: center;
+        font-size: 1.5em;
     }
 }
 /*Recherche*/
 
 /*Filtres*/
-.searchfiltre {
-    margin-top: 30px;
+.filter_search {
+    margin-left: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    text-align: center;
 }
-
-.filtres{
+.filter_title{
+    font-size: 1.2em;
     font-weight: bold;
-    align-items: center;
     margin: 0 1em 0 0;
 }
-
-.recherchefil {
+.search_category {
     height: 3em;
-    width: 15em;
+    width: auto;
     display: flex;
-    align-items: center;
     margin-right: 1em;
     margin-left: 1em;
     border: 2px solid #F2F2F2;
-    border-radius: 2rem;
+    border-radius: 2em;
 }
-
-.recherchefil:hover {
+.search_category:hover {
     transform: scale(1.015);
     background-color:#DEEBFF ;
 
 }
-
-.recherchefiltrenom{
+.search_name{
     display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
     align-items: center;
     font-weight: bold;
 }
-
-#logo_filterwave {
+i.fa-money-bill-wave {
     display: flex;
     align-items: center;
     height: 3em;
@@ -235,8 +205,7 @@ i.fas.fa-search {
     color:#0065FC;
     border-radius: 100%;
 }
-
-#logo_filterchild {
+i.fa-child {
     display: flex;
     align-items: center;
     height: 3em;
@@ -246,8 +215,7 @@ i.fas.fa-search {
     color:#0065FC;
     border-radius: 100%;
 }
-
-#logo_filterheart {
+i.fa-heart {
     display: flex;
     align-items: center;
     height: 3em;
@@ -257,8 +225,7 @@ i.fas.fa-search {
     color:#0065FC;
     border-radius: 100%;
 }
-
-#logo_filterdog {
+i.fa-dog {
     display: flex;
     align-items: center;
     height: 3em;
@@ -268,10 +235,8 @@ i.fas.fa-search {
     color:#0065FC;
     border-radius: 100%;
 }
-
 .info {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px;
     display: flex;
     align-items: center;
 }
@@ -287,16 +252,19 @@ i.fas.fa-search {
     border-radius: 100%;
 }
 
-.dispo {
-    color: #000000;
-}
 @media screen and (max-width: 768px) {
-      
+    .filter_search {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .search_category {
+        margin: 10px 0;
+    }
 }
 /*Filtres*/
 
-/*Bloc central de recherche de vacances*/
 
+/*Bloc central de recherche de vacances*/
 .hosting_popular {
     width: 100%;
     display: flex;
@@ -494,7 +462,7 @@ i.fa-chart-line {
     order:3;
     background-color: #FFFFFF;
     width: 100%;
-    height: 35em;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -526,6 +494,9 @@ i.fa-chart-line {
     background-size: 100% 80%;
     background-repeat: no-repeat;
 }
+.activity:hover {
+    transform: scale(1.015);
+}
 .activity1{
     background-image: url("image/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");  
     height: 100%;
@@ -548,21 +519,21 @@ i.fa-chart-line {
 .activity6{
     background-image: url("image/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
-.activity:hover {
-    transform: scale(1.015);
-}
 .activity_name {
     position: relative;
-    top:85%;
+    top:12em;
     left:10px;
     font-weight: bold;
 }
 .activity_name1, 
 .activity_name4 {
     position: relative;
-    top:93%;
+    top:28.5em;
     left:10px;
 }
+
+
+
 
 @media screen and (max-width: 768px) {
     #activity {
@@ -607,9 +578,11 @@ i.fa-chart-line {
     justify-content: flex-start;
 }
 .footer_link {
-    padding: 20px 0 10px 0;
+    padding-top: 20px;
 }
-
+.footer_link:hover{
+    text-decoration: underline;
+}
 @media screen and (max-width: 768px) { 
     .footer {
         height: auto;
@@ -621,7 +594,7 @@ i.fa-chart-line {
         padding: 3em 2em;
     }
     .footer_link{
-        padding: 5px 0;
+        padding-top: 20px;
     }
 } 
 

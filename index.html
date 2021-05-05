@@ -28,61 +28,44 @@
 <!--En tete-->  
 
 <!--Recherche-->
-<section class="search">
-    <div class="blocsearch">
-    <div class="titretrou">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    </div>
-    <div class="enplein">
+<section>
+    <div class="search">
+        <h2 class="search_header">Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
-    </div>
-        <form class="rechercheform" method="post" action="reservia.php">
-            <span class="rechlogo">
-                <i class="fas fa-map-marker-alt fillocali"></i>
-
-            </span>
-
-                <input type="text" name="lieu" id="lieu" placeholder="Marseille, France"/>
-                <button class="buttonrech"> 
-                     <div class="rechercher" type="button" value="Rechercher">Rechercher</div>
+        <form class="search_form" method="post" action="reservia.php">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" name="location" id="location" placeholder="Marseille, France"/>
+                <button class="search_button"> 
+                    <p class="research" type="button" value="Rechercher">Rechercher</p>
                     <i class="fas fa-search "></i>
-                </button>                
+                </button>    
         </form>
-
+    </div>
 <!--Filtres-->
-    <div class="searchfiltre">
-        <h2 class="filtres">Filtres</h2>
-        
-        <a href="#" class="recherchefil">
-            <div class="rond">
-                <i class="fas fa-money-bill-wave" id="logo_filterwave"></i>            
-            </div>
-            <div class="recherchefiltrenom">&Eacuteconomique</div>
+    <div class="filter_search">
+        <p class="filter_title">Filtres</p>     
+        <a href="#" class="search_category">
+                <i class="fas fa-money-bill-wave"></i>            
+            <div class="search_name">&Eacuteconomique</div>
         </a>
         
-        <a href="#" class="recherchefil">    
-            <div class="rond">
-                <i class="fas fa-child" id="logo_filterchild"></i>
-            </div>
-            <div class="recherchefiltrenom">Familial</div>
+        <a href="#" class="search_category">    
+                <i class="fas fa-child"></i>
+            <div class="search_name">Familial</div>
         </a>
         
-        <a href="#" class="recherchefil">      
-            <div class="rond">
-                <i class="fas fa-heart" id="logo_filterheart"></i>
-            </div>
-            <div class="recherchefiltrenom">Romantique</div>
+        <a href="#" class="search_category">      
+                <i class="fas fa-heart"></i>
+            <div class="search_name">Romantique</div>
         </a>
         
-        <a href="#" class="recherchefil">     
-            <div class="rond">
-                <i class="fas fa-dog" id="logo_filterdog"></i>
-            </div>
-            <div class="recherchefiltrenom">Animaux autorisés</div>
+        <a href="#" class="search_category">     
+                <i class="fas fa-dog"></i>
+            <div class="search_name">Animaux autorisés</div>
         </a> 
     </div>           
     <div class="info">            
-        <i class="fas fa-info" class="ilogo"></i> <span class="dispo"> Plus de 500 logements sont disponibles dans cette ville</span>   
+        <i class="fas fa-info" class="ilogo"></i> <p> Plus de 500 logements sont disponibles dans cette ville</p>   
     </div>
     </div>    
 </section>
@@ -247,42 +230,41 @@
         </header>
        
         <div class="activity_picture">
-        <article class="activity activity1">   
-                <div class="activity_name activity_name1">
-                        <p>Vieux Port</p>
-                </div>             
-        </article>
+            <article class="activity activity1" href="https://www.marseille-tourisme.com/decouvrez-marseille/culture-et-patrimoine/sites-et-monuments/le-vieux-port/"> 
+                    <div class="activity_name activity_name1">
+                            <p>Vieux Port</p>
+                    </div>
+            </article>
+            <article class="activity activity2">  
+                    <div class="activity_name activity_name2">
+                        <p>Fort de Pomègues</p>
+                    </div>
+            </article>
 
-        <article class="activity activity2">   
-            <div class="activity_name activity_name2">
-                    <p>Fort de Pomègues</p>
-            </div>             
-        </article>
+            <article class="activity activity3">
+                    <div class="activity_name activity_name3">
+                        <p>Îles du Frioul</p>
+                    </div>
+            </article>
 
-        <article class="activity activity3">   
-            <div class="activity_name activity_name3">
-                    <p>Îles du Frioul</p>
-            </div>             
-        </article>
+            <article class="activity activity4">
+                <div class="activity_name activity_name4">
+                        <p>Parc national des Calanques</p>
+                </div>
+            </article>
 
-        <article class="activity activity4">   
-            <div class="activity_name activity_name4">
-                    <p>Parc national des Calanques</p>
-            </div>             
-        </article>
+            <article class="activity activity5">
+                <div class="activity_name activity_name5">
+                        <p>Notre-Dame-de-la-Garde</p>
+                </div>
+            </article>
 
-        <article class="activity activity5">   
-            <div class="activity_name activity_name5">
-                    <p>Notre-Dame-de-la-Garde</p>
-            </div>             
-        </article>
-
-        <article class="activity activity6">   
-            <div class="activity_name activity_name6">
-                    <p>Parc Longchamp</p>
-            </div>             
-        </article>
-    </div>   
+            <article class="activity activity6">
+                <div class="activity_name activity_name6">
+                        <p>Parc Longchamp</p>
+                </div>
+            </article>
+        </div>   
     </section>
     
     <!--Activités à Marseille-->
