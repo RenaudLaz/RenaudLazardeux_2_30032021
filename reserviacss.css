@@ -384,10 +384,10 @@ i.fa-dog {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0 0 0 30px;
     width: 100%;
     height: 32em;
     justify-content: space-between;
+    margin-left: 30px;
 }
 .activity {  
     box-shadow: 0 0 20px grey;
@@ -467,7 +467,8 @@ i.fa-dog {
         justify-content: center;
         font-weight: bold;
         width: 50%; 
-        margin-bottom: 30px;   
+        margin-bottom: 30px;
+           
     }
     .header_nav_link2:hover {
         color: #0065FC;
@@ -535,7 +536,7 @@ i.fa-dog {
     
     .popular_detail {   
         font-size: 1.2em;
-        left: 50%;    
+        left: 47%;    
     }
 
 
@@ -583,8 +584,10 @@ i.fa-dog {
         height: 11em;
     }
     .activity_picture {
-        margin: 5%;
+        align-items: center;
         height: auto;
+        margin-left: 0;
+
     }
     .activity_name {
         top:85%;
@@ -598,9 +601,7 @@ i.fa-dog {
         flex-direction: column;
     } 
     .footer_link_global {
-        align-content: space-between;
-        width: 100%;
-        padding: 3em 2em;
+        width: auto;
     }
     .footer_link{
         padding-top: 20px;
