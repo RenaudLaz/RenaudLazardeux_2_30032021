@@ -263,7 +263,6 @@ i.fa-dog {
     margin: 15px 5%;
     border: 5px solid #FFFFFF;
 }
-
 .popular_figure {
     width: 45%;
     height: 100%;
@@ -340,14 +339,10 @@ i.fa-dog {
 .hosting_detail {
     height: 45%;
     width: 100%;
-    position:absolute;
-    top: 55%;
-    left: 5px;
-    font-size: 1em;
 }
 .hosting_note {
     position: absolute;
-    bottom: 1px;
+    bottom: 0;
 }
 .note1 {
     color: #0065FC;
