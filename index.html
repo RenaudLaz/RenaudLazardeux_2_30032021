@@ -12,18 +12,18 @@
 <body>    
 <!--En tete-->        
     <header class="header">   
-        <img class="header_logo" src="image/Reservia@3x.png" alt="Logo de Reservia">
+        <img class="header_logo" src="image/logo/Reservia@3x.png" alt="Logo de Reservia">
         <nav class="header_navigation">
             <span class="header_link">
-                <a class="header_nav_link header_hosting" href="#hosting">Hébergements</a>
-                <a class="header_nav_link" href="#activity">Activités</a>
+                <a class="header_nav_link header_hosting" href="#hosting_container">Hébergements</a>
+                <a class="header_nav_link" href="#activity_container">Activités</a>
             </span>
                 <a class="header_signup" href="#">S'inscrire</a>
         </nav>
     </header> 
         <span class="header_link2">
-            <a class="header_nav_link2" href="#hosting">Hébergements</a>
-            <a class="header_nav_link2" href="#activity">Activités</a>
+            <a class="header_nav_link2" href="#hosting_container">Hébergements</a>
+            <a class="header_nav_link2" href="#activity_container">Activités</a>
         </span>
 <!--En tete-->  
  
@@ -33,7 +33,7 @@
             <div class="search">
                 <h1 class="search_header">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p id="search_location">En plein centre ville ou en pleine nature</p>
-                    <form class="search_form" method="post" action="reservia.php">
+                    <form class="search_form"> <!--todo back end apres-->
                         <i class="fas fa-map-marker-alt"></i>
                         <input type="text" name="location" id="location" placeholder="Marseille, France"/>
                         <input class="research" type="button" value="Rechercher">
@@ -45,22 +45,22 @@
             <div class="filter_search">
                 <p class="filter_title">Filtres</p>     
                     <a href="#" class="search_category">
-                        <i class="fas fa-money-bill-wave"></i>            
+                        <i class="fas fa-money-bill-wave icon"></i>            
                         <p class="search_name">&Eacute;conomique</p>
                     </a>
                 
                     <a href="#" class="search_category">    
-                        <i class="fas fa-child"></i>
+                        <i class="fas fa-child icon"></i>
                         <p class="search_name">Familial</p>
                     </a>
                 
                     <a href="#" class="search_category">      
-                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart icon"></i>
                         <div class="search_name">Romantique</div>
                     </a>
                 
                     <a href="#" class="search_category">     
-                        <i class="fas fa-dog"></i>
+                        <i class="fas fa-dog icon"></i>
                         <div class="search_name">Animaux autorisés</div>
                     </a> 
             </div>           
@@ -75,9 +75,9 @@
         <div class="hosting_popular">
     
             <!--Les plus populaires-->
-            <section id="popular">
+            <section id="popular_container">
                 <header class="popular_header">
-                    <h1 >Les plus populaires</h1> 
+                    <h1>Les plus populaires</h1> 
                     <i class="fas fa-chart-line"></i>
                 </header>
                     <article class="popular">
@@ -89,11 +89,11 @@
                                     <h2>Hôtel Le soleil du matin</h2>
                                     <p>Nuit à partir de <strong class="price">128€</strong></p>
                                     <div class="popular_note">
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
                                     </div>
                             </div>   
                         </a>
@@ -107,11 +107,11 @@
                                 <h2>Au coeur de l'eau Chambres d'hôtes</h2>
                                 <p>Nuit à partir de <strong class="price">71€</strong></p>
                                     <div class="popular_note">
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note2" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_inactive" ></i>
                                     </div> 
                             </div> 
                         </a>
@@ -125,11 +125,11 @@
                                 <h2>Hôtel Tout bleu et Blanc</h2>
                                 <p>Nuit à partir de <strong class="price">68€</strong></p>
                                     <div class="popular_note">
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note2" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_inactive" ></i>
                                     </div>
                             </div>
                         </a>      
@@ -138,7 +138,7 @@
 <!--Les plus populaires-->
 
 <!--Hébergements à Marseille-->
-            <section id="hosting">
+            <section id="hosting_container">
                 <header class="hosting_header">
                     <h1>Hébergements à Marseille</h1>
                 </header>
@@ -153,11 +153,11 @@
                                 <h2>Auberge la Cannebière</h2>
                                 <p>Nuit à partir de <strong class="price">25€</strong></p>
                                 <div class="hosting_note">
-                                    <i class="fas fa-star note1" ></i>
-                                    <i class="fas fa-star note1" ></i>
-                                    <i class="fas fa-star note1" ></i>
-                                    <i class="fas fa-star note1" ></i>
-                                    <i class="fas fa-star note2" ></i>
+                                    <i class="fas fa-star note_active" ></i>
+                                    <i class="fas fa-star note_active" ></i>
+                                    <i class="fas fa-star note_active" ></i>
+                                    <i class="fas fa-star note_active" ></i>
+                                    <i class="fas fa-star note_inactive" ></i>
                                 </div>
                             </div>
                         </a>
@@ -171,11 +171,11 @@
                                 <h2>Hôtel du port</h2>                 
                                 <p>Nuit à partir de <strong class="price">52€</strong></p>
                                     <div class="hosting_note">
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
                                     </div> 
                             </div> 
                         </a>
@@ -189,11 +189,11 @@
                                 <h2>Hôtel Les mouettes</h2>
                                 <p >Nuit à partir de <strong class="price">76€</strong></p>
                                     <div class="hosting_note">
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note2" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_inactive" ></i>
                                     </div> 
                             </div> 
                         </a>
@@ -207,11 +207,11 @@
                                 <h2>Hôtel de la mer</h2>
                                 <p>Nuit à partir de <strong class="price">46€</strong></p>
                                     <div class="hosting_note">
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note2" ></i>
-                                        <i class="fas fa-star note2" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_inactive" ></i>
+                                        <i class="fas fa-star note_inactive" ></i>
                                     </div> 
                             </div>    
                         </a>
@@ -225,11 +225,11 @@
                                 <h2>Auberge Le Panier</h2>
                                 <p>Nuit à partir de <strong class="price">23€</strong></p> 
                                     <div class="hosting_note">
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note1" ></i>
-                                        <i class="fas fa-star note2" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_active" ></i>
+                                        <i class="fas fa-star note_inactive" ></i>
                                     </div>
                             </div> 
                         </a>       
@@ -243,11 +243,11 @@
                                     <h2>Hôtel chez Amina</h2>
                                     <p>Nuit à partir de <strong class="price">96€</strong></p>
                                         <div class="hosting_note">
-                                            <i class="fas fa-star note1" ></i>
-                                            <i class="fas fa-star note1" ></i>
-                                            <i class="fas fa-star note1" ></i>
-                                            <i class="fas fa-star note1" ></i>
-                                            <i class="fas fa-star note1" ></i>
+                                            <i class="fas fa-star note_active" ></i>
+                                            <i class="fas fa-star note_active" ></i>
+                                            <i class="fas fa-star note_active" ></i>
+                                            <i class="fas fa-star note_active" ></i>
+                                            <i class="fas fa-star note_active" ></i>
                                         </div>
                                 </div>
                             </a>
@@ -258,7 +258,7 @@
 <!--Hébergements à Marseille-->
     
 <!--Activités à Marseille-->
-            <section id="activity">
+            <section id="activity_container">
                 <header class="activity_header">
                     <h1>Activités à Marseille</h1>
                 </header>
