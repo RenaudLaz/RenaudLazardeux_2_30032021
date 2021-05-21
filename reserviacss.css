@@ -208,6 +208,7 @@ i.icon {
     background-color: #F2F2F2;
     border-radius: 1.5em;
     width: 30%;
+    height: 50em;
     display: flex;
     flex-wrap: wrap;
 }
