@@ -21,7 +21,8 @@ h2 {
 /*En tete*/
 .header{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    height: auto; 
     margin: 30px;   
     justify-content: space-between;
 }
@@ -68,7 +69,6 @@ a {
 }
 
 /*En tete*/
-
 
 /*Recherche*/
 .search{ 
@@ -188,7 +188,6 @@ i.icon {
     border-radius: 100%;
 }
 /*Filtres*/
-
 
 /*Bloc central de recherche de vacances*/
 .hosting_popular {
@@ -392,7 +391,6 @@ i.icon {
 /*Activites*/
 /*Bloc central de recherche de vacances*/
 
-
 /*Pied de page*/
 .footer {
     width: 100%;
@@ -416,37 +414,44 @@ i.icon {
 }
 
 
-
 @media all and (max-width: 768px) {
     
     .header{
         align-items: center;
     }
-    .header_nav_link{
-        display: none;
-    }
-    .header_link2 {
+    .header_link {
         display: flex;
         flex-direction: row;
+        position:absolute;
+        left: 0em;
+        top: 3.5em;
         width:100%; 
         font-size: 1.2em;
     }
-    .header_nav_link2 {
+    
+    .header_nav_link {
         display: flex;
         justify-content: center;
         font-weight: bold;
-        width: 50%; 
-        margin-bottom: 30px;
-           
+        align-items: center;
+        width: 50%;
+        padding-top: 26px; 
     }
-    .header_nav_link2:hover {
+    .header_hosting {
+        border-top: none;
+        color:#000000;
+    }
+    
+    .header_nav_link:hover {
         color: #0065FC;
         text-decoration: #0065FC;
         padding-bottom: 3px;
-        border-bottom: 4px solid #0065FC;   
+        border-bottom: 4px solid #0065FC; 
+        border-top: none ;  
     }
-
-
+    .search_header{
+        margin-top:80px;
+    }
     .search_form {
         display: flex;
         justify-content: center;
@@ -484,7 +489,6 @@ i.icon {
         margin-left: -10px;
     }
 
-
     .filter_search {
         flex-direction: column;
         align-items: flex-start;
@@ -492,7 +496,6 @@ i.icon {
     .search_category {
         margin: 10px 0;
     }
-
 
     #popular_container {
         order:1;
@@ -508,7 +511,6 @@ i.icon {
         font-size: 1.2em;
         left: 47%;    
     }
-
 
 
     #hosting_container {
@@ -543,7 +545,6 @@ i.icon {
         
     }
 
-
     #activity_container {
         flex-direction: column;
         width: 100%;
@@ -570,7 +571,6 @@ i.icon {
         left:10px;
         font-weight: bold;
     }
-
 
     .footer {
         height: auto;
